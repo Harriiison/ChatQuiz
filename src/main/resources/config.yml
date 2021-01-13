@@ -1,0 +1,338 @@
+# Quiz Configuration
+# Created by Harrison#4651 <https://harriiison.me>
+
+# EXAMPLE
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# HOW TO USE:
+#
+# quizName is the name of the quiz (one word)
+# under the quiz name you must include a numbered list of all the questions
+# under the answers you must also include a numbered list of all the answers
+# the outcomes is a list of final options that the answer contributes towards
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# quizName:
+#   1:
+#     question: "The First Question"
+#     answers:
+#       1:
+#         answer: "The First Answer"
+#         outcomes:
+#            - "Option1"
+#            - "Option2"
+#       2:
+#         answer: "The Second Answer"
+#         outcomes:
+#            - "Option1"
+#            - "Option2"
+#       3:
+#         answer: "The Third Answer"
+#         outcomes:
+#            - "Option1"
+#            - "Option2"
+#   2:
+#     question: "The Second Question"
+#     answers:
+#       1:
+#         answer: "The First Answer"
+#         outcomes:
+#            - "Option1"
+#            - "Option2"
+#       2:
+#         answer: "The Second Answer"
+#         outcomes:
+#            - "Option1"
+#            - "Option2"
+#       3:
+#         answer: "The Third Answer"
+#         outcomes:
+#            - "Option1"
+#            - "Option2"
+
+# SETTINGS
+#
+# These settings are customisable for each quiz.
+# Simply enter the name of the quiz and copy each of the settings as shown below:
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# HOW TO USE
+#
+# questionTitle is the text in the title shown on the player's screen before each question
+# questionSubtitle is the text in the subtitle shown on the player's screen before each question
+# questionFormat is the format of the question message
+# answerFormat is the format of the answer message
+# endMessage is the format of the quiz completion message
+# outcomeMessage is the format of the message telling you your result
+# * Colour codes are supported *
+#
+# The following placeholders can be used: (include curly brackets)
+# - {quizName} --> the name of the quiz
+# - {questionNo} --> the question number
+# - {question} --> the question
+# - {answerNo} --> the answer number
+# - {answer} --> the answer
+# - {outcome} --> the quiz outcome
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+# quizName:
+#   questionTitle: "&eQuestion {questionNo}"
+#   questionSubtitle: "&7Click the corresponding option in chat to answer"
+#   questionFormat: "&bQuestion {questionNo}: &e{question}"
+#   answerFormat: "&b[{answerNo}] &3{answer}"
+#   endMessage: "&c&lThe quiz is over!"
+#   outcomeMessage: "&bBased on your answers you are best fit to have &e{outcome} &bas your Godly Parent"
+#
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#
+
+# QUIZ SETTINGS
+
+settings:
+  parentage:
+    questionTitle: "&eQuestion {questionNo}"
+    questionSubtitle: "&7Click the corresponding option in chat to answer"
+    questionFormat: "&bQuestion {questionNo}: &e{question}"
+    answerFormat: "&b[{answerNo}] &3{answer}"
+    endMessage: "&c&lThe quiz is over!"
+    outcomeMessage: "&bBased on your answers you are best fit to have &e{outcome} &bas your Godly Parent"
+
+# QUIZ TYPES:
+
+parentage:
+  1:
+    question: "What is your favorite animal?"
+    answers:
+      1:
+        answer: "Eagle"
+        outcomes:
+          - "Zeus/Jupiter"
+      2:
+        answer: "Horse"
+        outcomes:
+          - "Poseidon/Neptune"
+      3:
+        answer: "Pig"
+        outcomes:
+          - "Demeter/Ceres"
+      4:
+        answer: "Vulture"
+        outcomes:
+          - "Ares/Mars"
+      5:
+        answer: "Owl"
+        outcomes:
+          - "Athena"
+      6:
+        answer: "Swan"
+        outcomes:
+          - "Apollo/Apollo"
+      7:
+        answer: "Deer"
+        outcomes:
+          - "Artemis/Diana"
+      8:
+        answer: "Donkey"
+        outcomes:
+          - "Hephaestus/Vulcan"
+      9:
+        answer: "Dove"
+        outcomes:
+          - "Aphrodite/Venus"
+      10:
+        answer: "Tortoise"
+        outcomes:
+          - "Hermes/Mercury"
+      11:
+        answer: "Tiger"
+        outcomes:
+          - "Dionysus/Bacchus"
+      12:
+        answer: "Frog"
+        outcomes:
+          - "Hecate/Trivia"
+      13:
+        answer: "Cerberus"
+        outcomes:
+          - "Hades/Pluto"
+      14:
+        answer: "None of these"
+        outcomes:
+          - "Nike/Victoria"
+          - "Iris/Arcus"
+          - "Satyr/Faun"
+          - "Bellona"
+          - "Khione/Chione"
+  2:
+    question: "In battle which position are you most likely to take?"
+    answers:
+      1:
+        answer: "Defensive positions"
+        outcomes:
+          - "Apollo/Apollo"
+          - "Artemis/Diana"
+          - "Satyr/Faun"
+          - "Dionysus/Bacchus"
+          - "Hecate/Trivia"
+          - "Demeter/Ceres"
+          - "Khione/Chione"
+      2:
+        answer: "Frontline attack"
+        outcomes:
+          - "Ares/Mars"
+          - "Zeus/Jupiter"
+          - "Poseidon/Neptune"
+          - "Hades/Pluto"
+      3:
+        answer: "Strategy planning"
+        outcomes:
+          - "Athena"
+          - "Bellona"
+          - "Nike/Victoria"
+      4:
+        answer: "Communications"
+        outcomes:
+          - "Iris/Arcus"
+          - "Hephaestus/Vulcan"
+          - "Aphrodite/Venus"
+          - "Hermes/Mercury"
+  3:
+    question: "What is your fatal flaw?"
+    answers:
+      1:
+        answer: "Hubris"
+        outcomes:
+          - "Zeus/Jupiter"
+          - "Athena"
+          - "Bellona"
+          - "Apollo/Apollo"
+      2:
+        answer: "Trust"
+        outcomes:
+          - "Poseidon/Neptune"
+          - "Iris/Arcus"
+      3:
+        answer: "Distrust"
+        outcomes:
+          - "Artemis/Diana"
+          - "Hecate/Trivia"
+          - "Khione/Chione"
+      4:
+        answer: "Indecisiveness"
+        outcomes:
+          - "Demeter/Ceres"
+      5:
+        answer: "Anger"
+        outcomes:
+          - "Ares/Mars"
+      6:
+        answer: "Overly-competitive"
+        outcomes:
+          - "Nike/Victoria"
+      7:
+        answer: "Lack of confidence"
+        outcomes:
+          - "Hephaestus/Vulcan"
+          - "Satyr/Faun"
+      8:
+        answer: "Jealousy"
+        outcomes:
+          - "Aphrodite/Venus"
+      9:
+        answer: "Super impulsive"
+        outcomes:
+          - "Hermes/Mercury"
+      10:
+        answer: "Laziness"
+        outcomes:
+          - "Dionysus/Bacchus"
+      11:
+        answer: "I hold grudges"
+        outcomes:
+          - "Hades/Pluto"
+  4:
+    question: "What is your favorite weapon?"
+    answers:
+      1:
+        answer: "Bow"
+        outcomes:
+          - "Artemis/Diana"
+          - "Apollo/Apollo"
+      2:
+        answer: "Trident"
+        outcomes:
+          - "Poseidon/Neptune"
+      3:
+        answer: "Scythe"
+        outcomes:
+          - "Demeter/Ceres"
+          - "Hades/Pluto"
+      4:
+        answer: "Dagger"
+        outcomes:
+          - "Aphrodite/Venus"
+          - "Iris/Arcus"
+      5:
+        answer: "Spear"
+        outcomes:
+          - "Zeus/Jupiter"
+      6:
+        answer: "Staff"
+        outcomes:
+          - "Hecate/Trivia"
+          - "Khione/Chione"
+      7:
+        answer: "Club"
+        outcomes:
+          - "Satyr/Faun"
+      8:
+        answer: "Battle axe"
+        outcomes:
+          - "Hephaestus/Vulcan"
+      9:
+        answer: "Sword"
+        outcomes:
+          - "Hermes/Mercury"
+          - "Dionysus/Bacchus"
+      10:
+        answer: "Any weapon goes"
+        outcomes:
+          - "Athena"
+          - "Ares/Mars"
+          - "Nike/Victoria"
+          - "Bellona"
+  5:
+    question: "What is your favourite element?"
+    answers:
+      1:
+        answer: "Air"
+        outcomes:
+          - "Zeus/Jupiter"
+          - "Iris/Arcus"
+          - "Athena"
+          - "Artemis/Diana"
+          - "Hermes/Mercury"
+          - "Nike/Victoria"
+      2:
+        answer: "Earth"
+        outcomes:
+          - "Hades/Pluto"
+          - "Demeter/Ceres"
+          - "Satyr/Faun"
+          - "Bellona"
+          - "Hecate/Trivia"
+      3:
+        answer: "Fire"
+        outcomes:
+          - "Poseidon/Neptune"
+          - "Dionysus/Bacchus"
+          - "Khione/Chione"
+      4:
+        answer: "Water"
+        outcomes:
+          - "Hephaestus/Vulcan"
+          - "Ares/Mars"
+          - "Apollo/Apollo"
+          - "Aphrodite/Venus"

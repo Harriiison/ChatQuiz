@@ -1,0 +1,17 @@
+name: ChatQuiz
+version: 1.0.0
+main: me.harriiison.quiz.ChatQuiz
+author: Harrison
+website: https://harriiison.me/
+description: An easily configurable in-game chat quiz plugin.
+api-version: '1.13'
+
+commands:
+  quiz:
+    usage: /quiz
+    description: Perform quiz related commands.
+
+permissions:
+  quiz.admin:
+    description: Admin access to this plugin
+    default: op
