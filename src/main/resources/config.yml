@@ -91,248 +91,94 @@
 # QUIZ SETTINGS
 
 settings:
-  parentage:
+  exampleQuiz:
     questionTitle: "&eQuestion {questionNo}"
     questionSubtitle: "&7Click the corresponding option in chat to answer"
     questionFormat: "&bQuestion {questionNo}: &e{question}"
     answerFormat: "&b[{answerNo}] &3{answer}"
     endMessage: "&c&lThe quiz is over!"
-    outcomeMessage: "&bBased on your answers you are best fit to have &e{outcome} &bas your Godly Parent"
+    outcomeMessage: "&bYour most commonly selected answer was &e{outcome}"
 
-# QUIZ TYPES:
+# YOUR QUIZZES:
 
-parentage:
+# This operational example is a quiz that finds who your ideal Greek God parent would be based on your answers.
+# To create your own simple change "exampleQuiz" to your quiz name,
+# and modify the questions, answers and outcomes respectively.
+exampleQuiz:
   1:
-    question: "What is your favorite animal?"
+    question: "What is your favourite animal?"
     answers:
       1:
         answer: "Eagle"
         outcomes:
-          - "Zeus/Jupiter"
+          - "Zeus"
       2:
         answer: "Horse"
         outcomes:
-          - "Poseidon/Neptune"
+          - "Poseidon"
       3:
         answer: "Pig"
         outcomes:
-          - "Demeter/Ceres"
+          - "Demeter"
       4:
         answer: "Vulture"
         outcomes:
-          - "Ares/Mars"
+          - "Ares"
       5:
         answer: "Owl"
         outcomes:
           - "Athena"
       6:
-        answer: "Swan"
-        outcomes:
-          - "Apollo/Apollo"
-      7:
-        answer: "Deer"
-        outcomes:
-          - "Artemis/Diana"
-      8:
-        answer: "Donkey"
-        outcomes:
-          - "Hephaestus/Vulcan"
-      9:
-        answer: "Dove"
-        outcomes:
-          - "Aphrodite/Venus"
-      10:
-        answer: "Tortoise"
-        outcomes:
-          - "Hermes/Mercury"
-      11:
-        answer: "Tiger"
-        outcomes:
-          - "Dionysus/Bacchus"
-      12:
-        answer: "Frog"
-        outcomes:
-          - "Hecate/Trivia"
-      13:
-        answer: "Cerberus"
-        outcomes:
-          - "Hades/Pluto"
-      14:
         answer: "None of these"
         outcomes:
-          - "Nike/Victoria"
-          - "Iris/Arcus"
-          - "Satyr/Faun"
-          - "Bellona"
-          - "Khione/Chione"
+          - "Nike"
+          - "Iris"
+          - "Satyr"
   2:
     question: "In battle which position are you most likely to take?"
     answers:
       1:
         answer: "Defensive positions"
         outcomes:
-          - "Apollo/Apollo"
-          - "Artemis/Diana"
-          - "Satyr/Faun"
-          - "Dionysus/Bacchus"
-          - "Hecate/Trivia"
-          - "Demeter/Ceres"
-          - "Khione/Chione"
+          - "Apollo"
+          - "Satyr"
       2:
         answer: "Frontline attack"
         outcomes:
-          - "Ares/Mars"
-          - "Zeus/Jupiter"
-          - "Poseidon/Neptune"
-          - "Hades/Pluto"
+          - "Ares"
+          - "Zeus"
+          - "Poseidon"
       3:
         answer: "Strategy planning"
         outcomes:
           - "Athena"
-          - "Bellona"
-          - "Nike/Victoria"
+          - "Nike"
       4:
         answer: "Communications"
         outcomes:
-          - "Iris/Arcus"
-          - "Hephaestus/Vulcan"
-          - "Aphrodite/Venus"
-          - "Hermes/Mercury"
+          - "Iris"
   3:
-    question: "What is your fatal flaw?"
-    answers:
-      1:
-        answer: "Hubris"
-        outcomes:
-          - "Zeus/Jupiter"
-          - "Athena"
-          - "Bellona"
-          - "Apollo/Apollo"
-      2:
-        answer: "Trust"
-        outcomes:
-          - "Poseidon/Neptune"
-          - "Iris/Arcus"
-      3:
-        answer: "Distrust"
-        outcomes:
-          - "Artemis/Diana"
-          - "Hecate/Trivia"
-          - "Khione/Chione"
-      4:
-        answer: "Indecisiveness"
-        outcomes:
-          - "Demeter/Ceres"
-      5:
-        answer: "Anger"
-        outcomes:
-          - "Ares/Mars"
-      6:
-        answer: "Overly-competitive"
-        outcomes:
-          - "Nike/Victoria"
-      7:
-        answer: "Lack of confidence"
-        outcomes:
-          - "Hephaestus/Vulcan"
-          - "Satyr/Faun"
-      8:
-        answer: "Jealousy"
-        outcomes:
-          - "Aphrodite/Venus"
-      9:
-        answer: "Super impulsive"
-        outcomes:
-          - "Hermes/Mercury"
-      10:
-        answer: "Laziness"
-        outcomes:
-          - "Dionysus/Bacchus"
-      11:
-        answer: "I hold grudges"
-        outcomes:
-          - "Hades/Pluto"
-  4:
-    question: "What is your favorite weapon?"
-    answers:
-      1:
-        answer: "Bow"
-        outcomes:
-          - "Artemis/Diana"
-          - "Apollo/Apollo"
-      2:
-        answer: "Trident"
-        outcomes:
-          - "Poseidon/Neptune"
-      3:
-        answer: "Scythe"
-        outcomes:
-          - "Demeter/Ceres"
-          - "Hades/Pluto"
-      4:
-        answer: "Dagger"
-        outcomes:
-          - "Aphrodite/Venus"
-          - "Iris/Arcus"
-      5:
-        answer: "Spear"
-        outcomes:
-          - "Zeus/Jupiter"
-      6:
-        answer: "Staff"
-        outcomes:
-          - "Hecate/Trivia"
-          - "Khione/Chione"
-      7:
-        answer: "Club"
-        outcomes:
-          - "Satyr/Faun"
-      8:
-        answer: "Battle axe"
-        outcomes:
-          - "Hephaestus/Vulcan"
-      9:
-        answer: "Sword"
-        outcomes:
-          - "Hermes/Mercury"
-          - "Dionysus/Bacchus"
-      10:
-        answer: "Any weapon goes"
-        outcomes:
-          - "Athena"
-          - "Ares/Mars"
-          - "Nike/Victoria"
-          - "Bellona"
-  5:
     question: "What is your favourite element?"
     answers:
       1:
         answer: "Air"
         outcomes:
-          - "Zeus/Jupiter"
-          - "Iris/Arcus"
+          - "Zeus"
+          - "Iris"
           - "Athena"
-          - "Artemis/Diana"
-          - "Hermes/Mercury"
-          - "Nike/Victoria"
+          - "Nike"
       2:
         answer: "Earth"
         outcomes:
-          - "Hades/Pluto"
-          - "Demeter/Ceres"
-          - "Satyr/Faun"
-          - "Bellona"
-          - "Hecate/Trivia"
+          - "Demeter"
+          - "Satyr"
       3:
         answer: "Fire"
         outcomes:
-          - "Poseidon/Neptune"
-          - "Dionysus/Bacchus"
-          - "Khione/Chione"
+          - "Poseidon"
+          - "Dionysus"
       4:
         answer: "Water"
         outcomes:
-          - "Hephaestus/Vulcan"
-          - "Ares/Mars"
-          - "Apollo/Apollo"
-          - "Aphrodite/Venus"
+          - "Ares"
+          - "Apollo"
