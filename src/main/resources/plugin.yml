@@ -15,3 +15,6 @@ permissions:
   quiz.admin:
     description: Admin access to this plugin
     default: op
+  quiz.signs:
+    description: Gives access to use the [QUIZ] signs
+    default: op

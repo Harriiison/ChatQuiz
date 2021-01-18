@@ -74,7 +74,7 @@ public class QuizCommand implements CommandExecutor {
                     String quizName = args[2];
 
                     Set<String> quizNames = plugin.getConfig().getKeys(false);
-                    if (!quizNames.contains(quizName)) {
+                    if (!quizNames.contains(quizName) || quizName.equals("settings")) {
                         sender.sendMessage(cc( "&cInvalid Quiz: " + quizName));
                         return true;
                     }
